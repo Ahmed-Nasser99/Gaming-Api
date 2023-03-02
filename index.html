@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="banter-loader d-none">
+      <div class="banter-loader__box"></div>
+      <div class="banter-loader__box"></div>
+      <div class="banter-loader__box"></div>
+      <div class="banter-loader__box"></div>
+      <div class="banter-loader__box"></div>
+      <div class="banter-loader__box"></div>
+      <div class="banter-loader__box"></div>
+      <div class="banter-loader__box"></div>
+      <div class="banter-loader__box"></div>
+    </div>
+
+    <div class="gameMain">
+      <header class="bg-img"></header>
+      <nav class="navbar navbar-expand-lg w-75 ps-2 pe-2">
+        <div class="container-fluid">
+          <div class="logo d-flex align-items-center">
+            <img src="images/logo-sm.png" width="50px" />
+            <span class="text-white fs-4 ms-3">GAME REVIEWS</span>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center justify-content-around w-75 ms-auto me-4"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link Myactive"
+                  aria-current="page"
+                  data-bs-target="mmorpg"
+                  href="#"
+                  >MMORPG</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="#"
+                  data-bs-target="shooter"
+                  >shooter</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="#"
+                  data-bs-target="sailing"
+                  >SAILING</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="#"
+                  data-bs-target="permadeath"
+                  >permadeath</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="#"
+                  data-bs-target="superhero"
+                  >superhero</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="#"
+                  data-bs-target="pixel"
+                  >pixel</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="gameCards mt-4 h-100 w-100">
+        <div class="container">
+          <div
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4"
+            id="demo"
+          ></div>
+        </div>
+      </main>
+    </div>
+    <section class="detils h-100 w-100 d-none py-5">
+      <div class="container h-100 w-100">
+        <header
+          class="headerDet text-white d-flex align-items-center justify-content-between p-3 mb-3"
+        >
+          <h3>Details Game</h3>
+
+          <i class="fa-solid fa-xmark fs-1" id="closeTap"></i>
+        </header>
+        <div class="row" id="detils"></div>
+      </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>
